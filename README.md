@@ -6,9 +6,9 @@ This website was created as a tool to help users with scheduling their regular w
 
 Screenshots as follows:
 
-![Screenshot]()
+![Screenshot](./Assets/Images/Screenshot1.jpg)
 
-![Screenshot]()
+![Screenshot](./Assets/Images/Screenshot2.jpg)
 
 
 
