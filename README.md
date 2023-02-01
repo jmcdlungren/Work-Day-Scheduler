@@ -12,7 +12,7 @@ Screenshots as follows:
 
 
 
-[Password Generator Webpage](https://jmcdlungren.github.io/Work-Day-Scheduler/)
+[Work Day Scheduler Webpage](https://jmcdlungren.github.io/Work-Day-Scheduler/)
 
 [GitHub Repository Link](https://github.com/jmcdlungren/Work-Day-Scheduler)
 
