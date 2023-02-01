@@ -8,7 +8,16 @@ $(function () {
   //
   var save = document.querySelector(".saveBtn");
   var description = document.querySelector(".description");
-  var toDo = [];
+
+
+
+  save.addEventListener("click", function saveTodo() {
+    // saveTodo.preventDefault();
+    var toDoItems = description.value;
+
+    console.log(toDoItems);
+    
+  });
 
 
   // submit.addEventListener("click", function(event) {
@@ -26,12 +35,7 @@ $(function () {
   //   localStorage.setItem("scoreBoard", JSON.stringify(scoreBoard));
 
 
-  save.addEventListener("click", function saveTodo() {
-    // saveTodo.preventDefault();
-    var toDoItems = description.value;
 
-    console.log(toDoItems);
-  });
 
 
   // TODO: Add code to apply the past, present, or future class to each time block by comparing the id to the current hour. HINTS: How can the id attribute of each time-block be used to conditionally add or remove the past, present, and future classes? How can Day.js be used to get the current hour in 24-hour time?
@@ -49,19 +53,24 @@ $(function () {
     currentDay.textContent = today;
   }
 
-  if (hour.textContent === rightNow) {
-    time.classList.add("present");
-  } else {
-    if (hour.textContent < rightNow) {
-      time.classList.add("past")
+  for (var i = 0; i < time.length; i++) {
+    if (hour.textContent === rightNow) {
+      time[i].classList.add("present");
     } else {
-      if (hour.textContent > rightNow) {
-        time.classList.add("future")
+      if (hour.textContent < rightNow) {
+        time[i].classList.add("past")
+      } else {
+        if (hour.textContent > rightNow) {
+          time[i].classList.add("future")
+        }
       }
-    }
     };
-  
-  
+
+  }
+
+
+
+
 
 
   // TODO: Add code to get any user input that was saved in localStorage and set the values of the corresponding textarea elements. HINT: How can the id attribute of each time-block be used to do this?
